@@ -1,4 +1,2 @@
-python-telegram-bot
-openpyxl
-psycopg2-binary
-requests
+python-telegram-bot==21.6
+openpyxl==3.1.5
