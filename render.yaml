@@ -1,6 +1,13 @@
 services:
   - type: worker
-    name: concrete-bot
+    name: concrete-logistics-bot
     runtime: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: python concrete_logistics_bot.py
+    plan: free
+
+    buildCommand: "pip install -r requirements.txt"
+
+    startCommand: "python bot.py"
+
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
